@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Paragraph Style</title>
+    <style>
+        .welcomeText {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="welcomeText">Welcome to VTC Academy</p>
+    <div>
+        <button onclick="changeStyle()">Change Style</button>
+    </div>
+
+    <script>
+        function changeStyle() {
+            var paragraph = document.querySelector(".welcomeText");
+            paragraph.style.fontFamily = "Comic Sans MS";
+            paragraph.style.fontSize = "20px";
+            paragraph.style.color = "green";
+        }
+    </script>
+</body>
+
+</html>

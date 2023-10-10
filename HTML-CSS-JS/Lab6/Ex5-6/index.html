@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Customer Form</h1>
+    <div class="container">
+      <form class="customer-form" id="registrationForm">
+        <div class="full-name-input">
+          <label for="name" class="input-name"> Full Name </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name..."
+          />
+          <span id="name_error" class="error"></span>
+        </div>
+        <div class="email-input">
+          <label>Email </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email..."
+          />
+          <span id="email_error" class="error"></span>
+        </div>
+        <div class="phone-input">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your phone..."
+          />
+          <span id="phone_error" class="error"></span>
+        </div>
+        <div>
+          <div class="gender-select">
+            <label>Gender</label>
+            <span class="male">
+              <input type="radio" name="gender" id="male" value="Male" />
+              <label for="male">Male</label>
+            </span>
+            <span class="female">
+              <input type="radio" name="gender" id="female" value="Female" />
+              <label for="female">Female</label>
+            </span>
+            <span class="other">
+              <input type="radio" name="gender" id="other" value="Other" />
+              <label for="other">Other</label>
+            </span>
+          </div>
+          <span id="gender_error" class="error"></span>
+        </div>
+        <br />
+        <div class="country-select">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Vietnam">Việt Nam</option>
+            <option value="USA">Mỹ</option>
+            <option value="Canada">Canada</option>
+          </select>
+          <br /><br />
+        </div>
+        <div class="comment-input">
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Write Something..."
+          ></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" id="submit_button" value="Submit" />
+          <input type="reset" id="reset_button" value="Reset" />
+        </div>
+        <div id="submittedInfo">
+          <h2>Submit Success</h2>
+          <p id="FullName"></p>
+          <p id="Email"></p>
+          <p id="Phone"></p>
+          <p id="Gender"></p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

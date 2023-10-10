@@ -1,0 +1,49 @@
+.lab{
+    color: brown;
+}
+
+/* Ex1 */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rowInf {
+  color: #ffff;
+  background-color: rgb(87, 170, 87) !important;
+}
+
+.col1 {
+  width: 60%;
+}
+
+.col2 {
+  width: 30%;
+}
+
+.col3 {
+  width: 20%;
+}
+
+tr {
+  border: 1px solid #ccc;
+}
+
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #eee;
+}
+table tr:nth-child(even) {
+  background-color: white;
+}
+
+.rowDoc:hover {
+  background-color: green !important;
+  cursor: pointer;
+}

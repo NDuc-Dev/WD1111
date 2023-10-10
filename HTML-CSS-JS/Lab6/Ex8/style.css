@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-form{
+    max-width: 800px ;
+    position: relative;
+}
+
+.log-in-form #left{
+    padding: 50px 45px 24px;
+    background-color: #ffff;
+}
+
+.log-in-form #left #btn-action {
+    padding: 3px 6px;
+    border: none;
+    background-color: #ffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+
+.container .log-in-form #left .heading{
+    box-sizing: border-box;
+    margin: 20px 0;
+}

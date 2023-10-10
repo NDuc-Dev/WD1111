@@ -1,0 +1,104 @@
+.lab {
+    color: brown;
+}
+
+/* Ex1 */
+.Item {
+    color: blue;
+    text-decoration: underline;
+}
+
+.AfterCss {
+    list-style: none;
+}
+
+.AfterCss li::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid red;
+}
+
+.AfterCss li::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid red;
+    z-index: -1;
+}
+
+.AfterCss li {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Ex2 */
+
+.ex2 {
+    border: 1px solid gray;
+    padding: 18px;
+}
+
+/* Ex3 */
+
+.container {
+    height: 46px;
+    background-color: rgb(82, 79, 79);
+    width: 100%;
+}
+
+#nav {
+    padding: 0;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #ffff;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover {
+    background-color: rgb(207, 2, 2);
+}
+
+#nav .subnav {
+    padding: 0;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    min-width: 140px;
+}
+
+
+#nav .subnav a {
+    color: black;
+}

@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+}
+#header {
+  height: 60px;
+  background-color: bisque;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#logo {
+  display: inline-block;
+  border: 2px solid black;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+#logo a {
+  color: black;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+}
+#nav {
+  display: inline-block;
+  float: right;
+}
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  color: black;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 24px;
+}
+#slider {
+  background-color: rgb(36, 122, 235);
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  width: 95%;
+  height: 400px;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 400px;
+}
+
+#content {
+  display: flex;
+}
+
+#content #contentContainer {
+  display: inline-block;
+  width: 65%;
+  height: 400px;
+  margin: 1%;
+}
+
+#content #contentContainer div {
+  padding-left: 5%;
+}
+
+#content #contentContainer #headerContent {
+  line-height: 40px;
+  background-color: aquamarine;
+  margin-top: 10px;
+}
+
+#content #contentContainer #coppyContent{
+    margin-top: 10px;
+    background-color: aqua;
+    height: 150px;
+}
+
+#content #contentContainer #coppyContent p{
+    padding: 20px 0;
+}
+
+#content #contentContainer #footerContent{
+    padding-left: 5%;
+    margin-top: 10px;
+    background-color: aqua;
+    height: 40px;
+}
+
+#content #contentContainer #footerContent cite
+{
+   line-height: 40px;
+}
+
+#footer {
+}

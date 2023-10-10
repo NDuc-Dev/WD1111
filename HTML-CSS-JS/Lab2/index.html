@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .lab {
+      color: brown;
+    }
+    /* Ex2 */
+    .heading1 {
+      color: green;
+    }
+    .heading2,
+    .heading3 {
+      color: red;
+    }
+
+    /* Ex3 */
+    .underlined {
+      text-decoration: underline;
+    }
+
+    @keyframes blink {
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: visible;
+      }
+      100% {
+        visibility: hidden;
+      }
+    }
+    .blinking {
+      animation: blink is step-end infinite;
+    }
+    .capitalized {
+      text-transform: capitalize;
+    }
+    .uppercase {
+      text-transform: uppercase;
+    }
+    .lowercase {
+      text-transform: lowercase;
+    }
+    .shadow {
+      text-shadow: 1px 1px 4px blue;
+    }
+
+    /* Ex4 */
+    #header {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #e7dede;
+      color: red;
+    }
+
+    #content h2 {
+      text-align: center;
+      color: red;
+    }
+
+    .new {
+      color: rgb(83, 83, 255);
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    #footer {
+      display: block;
+      width: 100%;
+      background-color: #e7dede;
+      text-align: right;
+    }
+
+    /* Ex5 */
+    .outer {
+      display: block;
+      padding: 25px;
+      margin: 25px;
+      background-color: rgb(211, 205, 205);
+      border: 25px solid dodgerblue;
+      width: 300px;
+    }
+
+    /* Ex6 */
+    .container,
+    .item {
+      display: block;
+      border: 1px solid gray;
+      margin: 3px;
+    }
+
+    .container {
+      width: 300px;
+    }
+
+    .item {
+      padding: 5px;
+      font-family: tahoma;
+    }
+
+    #foot,
+    #head {
+      background-color: rgb(159, 182, 255);
+      color: #ffff;
+    }
+
+    #content {
+      height: 100px;
+    }
+
+    /* Ex7 */
+
+    .item1 {
+      display: flex;
+    }
+
+    .inf {
+      background-color: #dddddd;
+      width: 300px;
+    }
+
+    .doc {
+      background-color: #f0f0f0;
+    }
+
+    .doc1 {
+      background-color: #e7e6e6;
+    }
+
+    .doc,
+    .doc1 {
+      width: 600px;
+    }
+
+    .item1 .inf,
+    .item1 .doc,
+    .item1 .doc1 {
+      padding: 10px;
+      display: block;
+    }
+  </style>
+  <body>
+    <h1 class="lab">Ex1</h1>
+    <h2 style="font-family: Arial; color: blue">
+      This paragraph is styled in blue with the Arial Black font, if available.
+    </h2>
+    <h2 style="font-family: Comic Sans MS; color: red">
+      This paragraph is styled in red with the Comic Sans MS font, if available
+    </h2>
+
+    <h1 class="lab">Ex2</h1>
+    <h1 class="heading1">Green Style Heading 1</h1>
+    <h2 class="heading2">Red Style Heading 2</h2>
+    <h3 class="heading3">Red style Heading 3</h3>
+
+    <h1 class="lab">Ex3</h1>
+    <p class="underlined">This will be underlined</p>
+    <del>This will be striked through</del>
+    <p class="blinking">This text will have blinking effect</p>
+    <p class="capitalized">This will be capitalized</p>
+    <p class="uppercase">this wl be uppercase</p>
+    <p class="lowercase">This will be lowercase</p>
+    <p class="shadow">
+      If your browser supports the css text-shadow property, this text will have
+      a blue shadow
+    </p>
+
+    <h1 class="lab">Ex4</h1>
+    <title>Testing CSS Style Sheet</title>
+    <div id="header">
+      <h1>Test CSS style Sheet</h1>
+    </div>
+    <div id="content">
+      <h2>This is heading level</h2>
+      <p>
+        This is sample page about<span class="new"> CSS Style sheet</span>. You
+        can use
+        <span class="highlight"
+          >id, class sellector, and font, color properties</span
+        >. It is <span class="new highlight">very improtant skill</span> in web
+        design.
+      </p>
+    </div>
+    <div id="footer">
+      <p>This page is created with <span class="new">HTML5/CSS3</span></p>
+    </div>
+
+    <h1 class="lab">Ex5</h1>
+    <div class="outer">
+      <p class="inner">
+        This text is the actual content of the box. We added a 25px padding,
+        25px margin and a25px dodgerblue border. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ez ea commodo
+        consequat. Duis aute irure dolor in reprehernderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        is est laborum.
+      </p>
+    </div>
+
+    <h1 class="lab">Ex6</h1>
+    <div class="container">
+      <div class="item" id="head">Header - This is the title.</div>
+      <div class="item" id="content">Content - This is the content</div>
+      <div class="item" id="foot">Footer - This is the footer</div>
+    </div>
+
+    <h1 class="lab">Ex7</h1>
+    <div class="container1">
+      <div class="item1">
+        <span class="inf">Thương hiệu</span> <span class="doc">Genyo</span>
+      </div>
+      <div class="item1">
+        <span class="inf">Xuất xứ thương hiệu</span>
+        <span class="doc1">Việt Nam</span>
+      </div>
+      <div class="item1">
+        <span class="inf">Hướng dẫn sử dụng</span>
+        <span class="doc"
+          >Kích Thước: Quý khách xem size để lựa chọn phù hợp cho thú cưng nhé
+          <div>
+            <br />1. S:150*150*40mm<br />2. M:180*180*50mm<br />3.
+            L:220*220*60mm<br />4. XL:260*260*60mm<br />5. 2XL:300*300*70mm<br />6.
+            3XL:330*330*80mm
+          </div></span
+        >
+      </div>
+      <div class="item1">
+        <span class="inf">Xuất xứ</span> <span class="doc1">Việt Nam</span>
+      </div>
+    </div>
+  </body>
+</html>
