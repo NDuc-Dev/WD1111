@@ -8,39 +8,52 @@ html {
   font-family: sans-serif;
 }
 
-.main {
-}
+.main {}
 
 .header {
   height: 120px;
   width: 100%;
   background-color: #3ba66b;
-
 }
 
 .middle-header {
-  height: 80px;
   position: relative;
   width: 100%;
+  padding: 24px 0;
 }
 
 .container {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.header-left{
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.header-right{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav {
-  display: flex;
-  /* justify-content: space-between; */
+
 }
 
 .nav,
 .subnav,
-.sub-item {
+.sub-item,
+.group-account {
   list-style: none;
 }
 
-.nav > li {
+.nav>li {
   display: inline-block;
 }
 
@@ -48,16 +61,15 @@ html {
   position: relative;
 }
 
-.nav > li > a {
+.nav>li>a {
   color: #ffff;
 }
 
 .nav li a {
   text-decoration: none;
   line-height: 42px;
-  font-weight: 500;
   font-size: 15px;
-  padding: 0 15px;
+  padding: 0 12px;
   display: block;
 }
 
@@ -65,9 +77,9 @@ html {
   display: block;
 }
 
-.sub-item > li:hover > a,
-.subnav > li:hover > a,
-.nav > li:hover > a {
+.sub-item>li:hover>a,
+.subnav>li:hover>a,
+.nav>li:hover>a {
   color: #fd7e14;
 }
 
@@ -78,7 +90,7 @@ html {
 }
 
 .sub-item li a,
-.subnav > li > a {
+.subnav>li>a {
   color: #000;
   padding: 0 8px;
   line-height: 29px;
@@ -106,12 +118,6 @@ html {
   display: block;
 }
 
-.row {
-  display: flex;
-  align-items: center ;
-  justify-content: space-between;
-  height: 120px;
-}
 
 .slider {
   min-height: 1000px;
