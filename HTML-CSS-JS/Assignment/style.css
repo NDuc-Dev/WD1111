@@ -31,6 +31,7 @@ html {
 
 .nav {
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .nav,
@@ -108,7 +109,7 @@ html {
 .row {
   display: flex;
   align-items: center ;
-  justify-content: center;
+  justify-content: space-between;
   height: 120px;
 }
 

@@ -80,6 +80,5 @@ form.addEventListener("submit", function (e) {
       "Số Điện Thoại: " + phone.value;
     document.getElementById("Gender").textContent =
       "Giới Tính: " + gender;
-    console.log(gender);
   }
 });
