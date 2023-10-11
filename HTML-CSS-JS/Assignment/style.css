@@ -1,110 +1,118 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-.main {}
+.main {
+}
 
 .header {
-    height: 120px;
-    width: 100%;
-    background-color: #3BA66B;
-    display: flex;
-    align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: #3ba66b;
+
 }
 
 .middle-header {
-    margin: 0 10px;
-    height: 80px;
-    display: flex;
-    align-items: center;
+  height: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+   margin: 0;
+   padding: 0;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
-
 
 .nav,
 .subnav,
 .sub-item {
-    list-style: none;
+  list-style: none;
 }
 
-.nav>li {
-    display: inline-block;
+.nav > li {
+  display: inline-block;
 }
 
 .nav li {
-    position: relative;
+  position: relative;
 }
 
-.nav>li>a {
-    color: #ffff;
-
+.nav > li > a {
+  color: #ffff;
 }
 
 .nav li a {
-    text-decoration: none;
-    line-height: 42px;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 0 15px;
-    display: block;
+  text-decoration: none;
+  line-height: 42px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 15px;
+  display: block;
 }
 
 .nav li:hover .subnav {
-    display: block;
+  display: block;
 }
 
-.sub-item>li:hover>a,
-.subnav>li:hover>a,
-.nav>li:hover>a {
-    color: #fd7e14;
+.sub-item > li:hover > a,
+.subnav > li:hover > a,
+.nav > li:hover > a {
+  color: #fd7e14;
 }
 
 .nav .subnav {
-    display: none;
-    background-color: #ffff;
-    min-width: 200px;
+  display: none;
+  background-color: #ffff;
+  min-width: 200px;
 }
 
 .sub-item li a,
-.subnav>li>a {
-    color: #000;
-    padding: 0 8px;
-    line-height: 29px;
-    border-bottom: 1px solid #ccc;
+.subnav > li > a {
+  color: #000;
+  padding: 0 8px;
+  line-height: 29px;
+  border-bottom: 1px solid #ccc;
 }
 
-
 .subnav {
-    position: absolute;
+  position: absolute;
 }
 
 .sub-item {
-    position: absolute;
-    left: 201px;
-    top: 0px;
-    background-color: #ffff;
-    min-width: 200px;
-    display: none;
+  position: absolute;
+  left: 201px;
+  top: 0px;
+  background-color: #ffff;
+  min-width: 200px;
+  display: none;
 }
 
 .subnav li:hover .sub-item {
-    display: block;
+  display: block;
 }
 
 .sub-item li a {
-    display: block;
+  display: block;
+}
+
+.row {
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  height: 120px;
 }
 
 .slider {
-    min-height: 1000px;
-    background-color: #555252cc;
+  min-height: 1000px;
+  background-color: #555252cc;
 }
