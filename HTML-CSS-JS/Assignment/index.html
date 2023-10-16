@@ -2,98 +2,181 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignment</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <div class="main">
-    <div class="header">
-      <div class="middle-header">
-        <div class="container">
-          <div class="row ">
-            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 header-left">
-
-              <ul class="nav">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li>
-                  <a href="#">Sản Phẩm</a>
-                  <ul class="subnav">
-                    <li><a href="#">Hạt giống</a></li>
-                    <li><a href="#">Hải sản tươi</a></li>
-                    <li><a href="#">Rau củ quả</a></li>
-                    <li><a href="#">Sản phẩm bán chạy</a></li>
-                    <li><a href="#">Thịt tươi sống</a></li>
-                    <li><a href="#">Thực phẩm tết</a></li>
-                    <li><a href="#">Thực phẩm khô</a></li>
-                    <li>
-                      <a href="#">Trái cây</a>
-                      <ul class="sub-item">
-                        <li><a href="">Chuối</a></li>
-                        <li><a href="">Táo</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Trứng và bơ</a></li>
-                    <li><a href="#">Đồ ăn đóng hộp</a></li>
-                    <li><a href="#">Đồ uống</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Liên Hệ</a></li>
-              </ul>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-3">
-              <div class="logo">
-                <a href=""><img src="https://sfresh.w2.exdomain.net/image/catalog/sfresh/logo/logo.png" alt="S.Fresh" />
-                </a>
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-9 col-md-9 col-sm-12 col-12 header-right">
-              <div class="btn-group">
-                <div class="header-search">
-                  <form action="#" class="header-search-form">
-                    <input type="text" placeholder="Tìm kiếm" />
-                    <button type="submit">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </form>
+  <div class="header">
+    <div class="middle-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 header-left">
+            <div class="heade_menunavs">
+              <div class="wrap_main">
+                <div class="account-max-1024 d-xl-none d-block">
+                  <a>Đăng nhập</a>
+                  <a>Đăng ký</a>
+                  <div class=" close-menu">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                  </div>
                 </div>
-                <ul class="group-account">
-                  <li>
-                    <a href="#">
-                      <i class="fa-regular fa-heart"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-regular fa-user"></i>
-                    </a>
-                  </li>
-                </ul>
+                <div class="bg-header-nav ">
+                  <nav class="header-nav">
+                    <ul class="item_big">
+                      <li class="nav-item">
+                        <a>Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a> Giới thiệu </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a> Sản phẩm </a>
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        <ul class="item_small">
+                          <li>
+                            <a> Hạt giống </a>
+                          </li>
+                          <li>
+                            <a> Hải sản tươi </a>
+                          </li>
+                          <li>
+                            <a> Rau củ quả </a>
+                          </li>
+                          <li>
+                            <a> Sản phẩm bán chạy </a>
+                          </li>
+                          <li>
+                            <a> Thịt tươi sống </a>
+                          </li>
+                          <li>
+                            <a> Thực phẩm tết </a>
+                          </li>
+                          <li>
+                            <a> Thực phẩm khô </a>
+                          </li>
+                          <li>
+                            <a> Trái cây </a>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            <ul>
+                              <li>
+                                <a>Chuối</a>
+                              </li>
+                              <li>
+                                <a>Táo</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a> Trứng và bơ </a>
+                          </li>
+                          <li> <a class="">
+                              Đồ ăn đóng hộp </a>
+                          </li>
+                          <li>
+                            <a class=""> Đồ uống </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="a-img"> Tin tức </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="a-img"> Liên hệ </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3">
+            <a class="logo">
+              <img src="https://sfresh.w2.exdomain.net/image/catalog/sfresh/logo/logo.png" alt="S.Fresh">
+            </a>
+          </div>
+          <div class="col-xl-5 col-lg-9 col-md-9 col-sm-12 col-12 header-right">
+            <div class="nd-header-search">
+              <form class="nd-header-search-form">
+                <input type="text" class="search-auto form-control" placeholder="Tìm kiếm" autocomplete="off">
+                <button class="btn btn-default" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="header-page-link">
+              <ul class="group-account">
+                <li>
+                  <div class="icon">
+                    <a class="wishlist_header">
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="headerWishlistCount">0</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="cart-drop">
+                  <div class="icon"> <a class="nd-header-cart" title="Giỏ hàng">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <span class="count_item_pr">0</span>
+                    </a>
+                  </div>
+                  <div class="top-cart-content">
+                    <div class="CartHeaderContainer"> </div>
+                  </div>
+                </li>
+                <div class="cart_sidebar" id="cart-sidebars">
+                  <div class="cart-content">
+                    <div class="clearfix cart_heading">
+                      <h4 class="cart_title">Giỏ hàng</h4>
+                      <div class="cart_btn-close" title="close">
+                        <i class="fa-regular fa-x"></i>
+                      </div>
+                    </div>
+                    <form action="" id="cartformpage">
+                      <div class="cart_body">
+                        <div class="cart-empty"><span class="empty-icon"><i class="ico ico-cart"></i></span>
+                          <div class="btn-cart-empty"><a class="btn btn-default" title="Tiếp tục mua hàng">Tiếp
+                              tục mua hàng</a></div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="cart-footer" style="display: none;">
+                      <hr>
+                      <div class="clearfix">
+                        <div class="cart__subtotal">
+                          <div class="cart__col-6">Tổng tiền:</div>
+                          <div class="text-right cart__totle"><span class="total-price">0đ</span></div>
+                        </div>
+                      </div>
+                      <div class="cart__btn-proceed-checkout-dt"> <button type="button"
+                          class="button btn btn-default cart__btn-proceed-checkout" id="btn-proceed-checkout"
+                          title="Thanh toán">Thanh toán</button> </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="user">
+                  <div class="icon"> <a title="Tài khoản" rel="nofollow">
+                      <i class="fa-solid fa-user"></i>
+                    </a> </div>
+                  <div class="drop-account"> <a>Đăng nhập</a>
+                    <a>Đăng ký</a>
+                  </div>
+                </li>
+                <li class="d-xl-none d-inline-block">
+                  <div class="category-action"> <i class="fa-solid fa-bars"></i></div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slider"></div>
-    <div class="content"></div>
-    <div class="footer"></div>
   </div>
 </body>
 
