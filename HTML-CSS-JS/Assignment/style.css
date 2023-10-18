@@ -12,6 +12,7 @@
   position: relative;
 }
 
+
 .container {
   padding-left: 10px;
   padding-right: 10px;
@@ -89,7 +90,7 @@
   padding: 0;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li ul{
+.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li ul {
   display: none;
   left: 223px;
   /* top: 0px; */
@@ -219,6 +220,7 @@
   height: 25px;
   font-size: 25px;
   color: #fff;
+  cursor: pointer;
 }
 
 .header .group-account li .icon {
@@ -281,7 +283,13 @@
   text-decoration: none;
   line-height: 30px;
   padding: 0 5px;
+  cursor: pointer;
 }
+
+.header .group-account .drop-account a:hover {
+  color: #ffb416;
+}
+
 
 .header .group-account .drop-account a:first-child {
   border-bottom: solid 1px #ebebeb;
@@ -303,6 +311,7 @@ img {
   height: auto;
   vertical-align: middle;
 }
+
 
 article,
 aside,
