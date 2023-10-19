@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.header {}
+.header {
+}
 
 .header .header-content {
   padding: 20px 0;
@@ -15,14 +16,13 @@
 .header .header-content::after {
   content: "";
   position: absolute;
-  background: url(https://sfresh.w2.exdomain.net/image/catalog/sfresh/bg-after-header.png
-) no-repeat top center;
+  background: url(https://sfresh.w2.exdomain.net/image/catalog/sfresh/bg-after-header.png)
+    no-repeat top center;
   width: 100%;
   height: 47px;
   bottom: -47px;
   z-index: 9;
 }
-
 
 .container {
   padding-left: 10px;
@@ -34,13 +34,13 @@
   margin-left: -10px;
 }
 
-.bg-header-nav .header-nav>ul.item_big {
+.bg-header-nav .header-nav > ul.item_big {
   text-align: left;
   margin: 0;
   padding: 0;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item {
   display: inline-block;
   float: left;
   position: relative;
@@ -51,11 +51,11 @@
   height: 42px;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item:first-child>a {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item:first-child > a {
   padding-left: 0;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>a {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > a {
   display: block;
   text-align: left;
   padding: 0px 15px;
@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item:hover>a {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item:hover > a {
   color: #ffb416;
 }
 
@@ -79,14 +79,14 @@
   position: relative;
 } */
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item:hover>ul {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item:hover > ul {
   overflow: visible;
   max-height: 3000px;
   max-width: 3000px;
   opacity: 1;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li:hover>ul {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul li:hover > ul {
   display: block;
   position: absolute;
   width: 250px;
@@ -97,18 +97,18 @@
   top: 245px;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul li {
   float: none;
   padding: 0;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li ul {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul li ul {
   display: none;
   left: 223px;
   /* top: 0px; */
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li a {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul li a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -120,15 +120,15 @@
   text-align: left;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul>li {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul > li {
   color: #333;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul>li:hover>a {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul > li:hover > a {
   color: #ffb416;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item>ul li:hover>ul {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item > ul li:hover > ul {
   display: block;
   position: absolute;
   width: 250px;
@@ -138,12 +138,12 @@
   box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.04);
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item .fa-caret-down {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item .fa-caret-down {
   visibility: hidden;
   display: none;
 }
 
-.bg-header-nav .header-nav>ul.item_big>li.nav-item .sub_item {
+.bg-header-nav .header-nav > ul.item_big > li.nav-item .sub_item {
   overflow: hidden;
   display: block;
   max-height: 0px;
@@ -302,21 +302,12 @@
   color: #ffb416;
 }
 
-
 .header .group-account .drop-account a:first-child {
   border-bottom: solid 1px #ebebeb;
 }
 
 .slider {
   margin-bottom: 50px;
-}
-
-.slider #pc {
-  display: block;
-}
-
-.slider #mobile {
-  display: none;
 }
 
 .category_list {
@@ -367,10 +358,68 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
+/*swiper*/
+.card {
+  position: relative;
+  display: inline-block;
+  width: 188px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 60px 0 15px;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.05);
+  border: none;
+}
 
+.card-warpper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px 10px;
 
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  
+}
 
+.card-image .card-img {
+  max-width: 156px;
+  margin: auto;
+  min-height: 156px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
 
+.slide-content h3 {
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 4px;
+  white-space: normal;
+  height: 38px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 19px;
+  padding: 0 10px;
+  margin: 20px 0 5px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-container{
+  max-width: 1300px;
+  width: 100%;
+}
+/*swiper*/
 
 a,
 .text-link {
@@ -389,7 +438,6 @@ img {
   vertical-align: middle;
 }
 
-
 article,
 aside,
 details,
@@ -406,7 +454,6 @@ summary {
 }
 
 @media (max-width: 767px) {
-
   .header .header-content::after {
     display: none;
   }
@@ -481,13 +528,24 @@ summary {
     padding-top: 10px;
   }
 
-  .header-left .heade_menunavs .bg-header-nav .header-nav ul.item_big li.nav-item {
+  .header-left
+    .heade_menunavs
+    .bg-header-nav
+    .header-nav
+    ul.item_big
+    li.nav-item {
     height: unset;
     width: 100%;
     float: left;
   }
 
-  .header-left .heade_menunavs .bg-header-nav .header-nav ul.item_big li.nav-item a {
+  .header-left
+    .heade_menunavs
+    .bg-header-nav
+    .header-nav
+    ul.item_big
+    li.nav-item
+    a {
     text-transform: initial;
     font-size: 15px;
     padding: 0 10px !important;
@@ -496,7 +554,13 @@ summary {
     line-height: 35px;
   }
 
-  .header-left .heade_menunavs .bg-header-nav .header-nav ul.item_big li .fa-caret-down {
+  .header-left
+    .heade_menunavs
+    .bg-header-nav
+    .header-nav
+    ul.item_big
+    li
+    .fa-caret-down {
     visibility: visible;
     position: absolute;
     right: 5px;
@@ -534,7 +598,8 @@ summary {
     color: #fff;
   }
 
-  .slider {}
+  .slider {
+  }
 
   .slider #pc {
     display: none;
